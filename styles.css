@@ -1,0 +1,123 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+   --spacing: 0.1rem;
+   --radius: 0.25rem;
+
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Roboto;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+h4{
+
+}
+
+
+nav {
+  background: lightblue;
+  height: 3rem;
+  display: grid;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.nav-center {
+  width: 90vw;
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-center h4 {
+  margin-bottom: 0;
+  color: #008CBA;
+}
+.nav-links {
+  display: flex;
+}
+nav a {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  letter-spacing: var(--spacing);
+  margin-right: 1rem;
+}
+nav a:hover {
+  color: #008CBA;
+}
+.current {
+  color: #008CBA;
+}
+/*
+=============== 
+Container
+===============
+*/
+main {
+  min-height: calc(100vh - 3rem);
+  display: grid;
+  place-items: center;
+}
+.container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container h2 {
+  background: black;
+  color: white;
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 2.5rem;
+}
+
+.btn-hero {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.4s;
+}
+.btn:hover {
+  background-color: #008CBA; 
+  color: white;
+}
+.img{
+	color: pink;
+}
+.shape{
+	fill:pink;
+	fill-opacity:0.969828;
+	stroke:none;
+	stroke-width:0.750501;
+	stroke-linecap:round;
+	stroke-linejoin:bevel;
+}
